@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación a mi Cumpleaños</title>
+    <style>
+        /* Tipografía moderna y limpia */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #e9ecef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            color: #343a40;
+        }
+
+        .tarjeta {
+            background-color: #ffffff;
+            border-radius: 20px;
+            padding: 45px 35px;
+            max-width: 420px;
+            width: 100%;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        /* Etiqueta Mejorada */
+        .etiqueta-contenedor {
+            margin-bottom: 25px;
+        }
+
+        .etiqueta {
+            background: linear-gradient(135deg, #212529, #343a40); /* Degradado oscuro elegante */
+            color: #ffffff;
+            padding: 8px 24px;
+            border-radius: 30px;
+            font-size: 0.85em;
+            font-weight: 600;
+            display: inline-block;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            box-shadow: 0 4px 10px rgba(33, 37, 41, 0.2);
+        }
+
+        h1 {
+            font-size: 2.4em;
+            margin: 0 0 15px 0;
+            color: #1a1d20;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+
+        /* Mensaje Mejorado */
+        p.mensaje {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555b61;
+            margin: 0 auto 30px auto;
+            max-width: 90%;
+            font-weight: 400;
+        }
+
+        p.mensaje strong {
+            color: #212529;
+            font-weight: 600;
+        }
+
+        /* Caja de información (Hora y Lugar) */
+        .info-caja {
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 16px;
+            padding: 20px 25px;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .item-info {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 18px;
+        }
+
+        .item-info:last-child {
+            margin-bottom: 0;
+        }
+
+        .icono {
+            font-size: 1.6em;
+            margin-right: 18px;
+            line-height: 1.1;
+        }
+
+        .texto-info strong {
+            display: block;
+            font-size: 0.85em;
+            color: #868e96;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 4px;
+        }
+
+        .texto-info span.titulo-lugar {
+            display: block;
+            font-size: 1.15em;
+            color: #212529;
+            font-weight: 700;
+        }
+
+        .texto-info span.direccion {
+            display: block;
+            font-size: 0.95em;
+            color: #495057;
+            margin-top: 4px;
+            line-height: 1.4;
+        }
+
+        /* Contenedor de Botones */
+        .botones-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        /* Estilos base de los botones */
+        .btn {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 15px 0;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1.05em;
+            transition: all 0.2s ease;
+            box-sizing: border-box;
+        }
+
+        /* Botón de Mapa (Secundario) */
+        .btn-mapa {
+            background-color: #ffffff;
+            color: #343a40;
+            border: 2px solid #e9ecef;
+        }
+
+        .btn-mapa:hover {
+            background-color: #f8f9fa;
+            border-color: #ced4da;
+            transform: translateY(-2px);
+        }
+
+        /* Botón de Confirmar (Primario) */
+        .btn-confirmar {
+            background-color: #212529;
+            color: #ffffff;
+            border: 2px solid #212529;
+            box-shadow: 0 4px 12px rgba(33, 37, 41, 0.2);
+        }
+
+        .btn-confirmar:hover {
+            background-color: #343a40;
+            border-color: #343a40;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(33, 37, 41, 0.3);
+        }
+
+        .btn-icono {
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="tarjeta">
+        <div class="etiqueta-contenedor">
+            <div class="etiqueta">📅 Mañana, 1 de abril</div>
+        </div>
+        
+        <h1>Mi Cumpleaños</h1>
+        
+        <p class="mensaje">
+            Estaré celebrando mi cumpleaños con algo sencillo en casa. Habrá <strong>buena comida y música</strong>, y me encantaría que pasaras a compartir un buen rato.
+        </p>
+
+        <div class="info-caja">
+            <div class="item-info">
+                <div class="icono">🕛</div>
+                <div class="texto-info">
+                    <strong>Hora</strong>
+                    <span class="titulo-lugar">Desde las 12:00 PM</span>
+                </div>
+            </div>
+            
+            <div class="item-info">
+                <div class="icono">📍</div>
+                <div class="texto-info">
+                    <strong>Lugar</strong>
+                    <span class="titulo-lugar">Mi casa</span>
+                    <span class="direccion">Carrera 1D #2-04<br>Puerto Colombia</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="botones-container">
+            <a href="https://www.google.com/maps/search/?api=1&query=Carrera+1D+%232-04,+Puerto+Colombia" class="btn btn-mapa" target="_blank">
+                <span class="btn-icono">🗺️</span> Ver en el mapa
+            </a>
+
+            <a href="https://wa.me/+573150489702?text=¡Hola%20Josimar!%20Allá%20nos%20vemos%20mañana%20para%20celebrar" class="btn btn-confirmar" target="_blank">
+                <span class="btn-icono">💬</span> Avisar que voy
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
